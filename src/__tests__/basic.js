@@ -7,13 +7,13 @@ test('character healthy condition check', () => {
 });
 
 test('character wounded condition check', () => {
-  const character = { name: 'Маг', health: 45 };
+  const character = { name: 'Маг', health: 50 };
   const condition = calculateCondition(character);
   expect(condition).toEqual('wounded');
 });
 
 test('character critical condition check', () => {
-  const character = { name: 'Маг', health: 10 };
+  const character = { name: 'Маг', health: 14 };
   const condition = calculateCondition(character);
   expect(condition).toEqual('critical');
 });
